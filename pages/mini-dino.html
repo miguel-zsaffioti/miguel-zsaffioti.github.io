@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Chaos Survival</title>
+  <title>Mini Dino</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -42,11 +42,11 @@
       </nav>
 
       <div class="social-links d-flex justify-content-center align-items-center">
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="email"><i class="bi bi-envelope"></i></a>
-        <a href="#" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/miguel-saffioti/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:miguel.zsaffioti@gmail.com" target="_blank" class="email"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/migzs123/"  target="_blank" class="github"><i class="bi bi-github"></i></a>
         
-        <a href="#" class="itchio">
+        <a href="https://migzss.itch.io/" target="_blank" class="itchio">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 16px; height: 16px; filter: invert(1);">
         </a>
       </div>
@@ -64,7 +64,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="../index.html">Inicio</a></li>
-            <li class="current">Chaos Surival</li>
+            <li class="current">Mini Dino</li>
           </ol>
         </nav>
       </div>
@@ -76,7 +76,7 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-media" data-aos="fade-up" data-aos-delay="150">
-              <img src="../assets/img/portfolio/PS-gif.webp" alt="Gameplay do Projeto" class="img-fluid w-100 rounded" loading="lazy">
+              <img src="../assets/img/portfolio/MD-gif.gif" alt="Gameplay do Projeto" class="img-fluid w-100 rounded" loading="lazy">
             </div>
           </div>
           <div class="col-lg-4">
@@ -84,18 +84,14 @@
               <h3>Informação do Projeto</h3>
               <ul>
                 <li><strong>Categoria</strong>: Game Development</li>
-                <li><strong>Engine</strong>: Unity</li>
-                <li><strong>Data do projeto</strong>: 04 Outubro, 2024</li>
+                <li><strong>Linguagem</strong>: Assembly</li>
+                <li><strong>Contexto</strong>: Disciplina de Organização e Arquitetura de Computadores</li>
                 
                 <li class="d-flex align-items-center gap-2 mt-2">
                   <strong class="me-2">Links Relacionados:</strong> 
                   
-                  <a href="#" class="link-badge bg-github" title="Ver no GitHub">
+                  <a href="https://github.com/migzs123/MiniDino" target="_blank" class="link-badge bg-github" title="Ver no GitHub">
                     <i class="bi bi-github" style="font-size: 20px; line-height: 0;"></i>
-                  </a>
-
-                  <a href="#" class="link-badge bg-itchio" title="Jogar no Itch.io">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 20px; height: 20px; filter: invert(1);">
                   </a>
                 </li>
                 </ul>
@@ -106,44 +102,41 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Visão Geral</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Este projeto foi desenvolvido para a disciplina de Organização e Arquitetura de Computadores e representa um mergulho profundo no funcionamento interno do hardware. O objetivo foi recriar o clássico "Jogo do Dinossauro" utilizando puramente Assembly.
               </p>
               <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
+                Diferente do desenvolvimento tradicional em alto nível, este projeto exigiu a construção de toda a lógica de física, controle de inputs e o Game Loop lidando diretamente com instruções de máquina e registradores. O código foi projetado para rodar especificamente em um simulador de processador customizado, exigindo total adaptação às restrições de memória e ao conjunto de instruções (ISA) do ambiente. Além da programação de baixo nível, também fui responsável por desenhar a pixel art simplificada do jogo, adaptando referências visuais da internet para que coubessem nas estritas limitações gráficas do simulador.
               </p>
 
               <div class="features mt-4">
-                <h3>Principais Recursos</h3>
+                <h3>Principais Aspectos Técnicos</h3>
                 <div class="row gy-3">
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-check-circle-fill"></i>
-                      <h4>Responsive Design</h4>
-                      <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                      <i class="bi bi-memory"></i>
+                      <h4>Programação em Baixo Nível</h4>
+                      <p>Desenvolvimento 100% em Assembly, lidando diretamente com instruções de máquina, manipulação de registradores e alocação manual de memória para executar a lógica do jogo.</p>
                     </div>
                   </div>
-
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-shield-check"></i>
-                      <h4>Advanced Security</h4>
-                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                      <i class="bi bi-pc-display-horizontal"></i>
+                      <h4>Arquitetura e Simulador</h4>
+                      <p>Código estruturado e otimizado para rodar exclusivamente em um simulador de processador customizado, respeitando as restrições e a arquitetura específica do ambiente acadêmico.</p>
                     </div>
                   </div>
-
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-graph-up"></i>
-                      <h4>Performance Optimization</h4>
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                      <i class="bi bi-dpad"></i>
+                      <h4>Game Loop em Assembly</h4>
+                      <p>Implementação do ciclo contínuo do jogo, detecção de inputs de teclado e cálculos de colisão e pulo, tudo construído do zero sem o auxílio de qualquer biblioteca externa ou engine.</p>
                     </div>
                   </div>
-
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-gear"></i>
-                      <h4>Easy Integration</h4>
-                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                      <i class="bi bi-palette"></i>
+                      <h4>Pixel Art Customizada</h4>
+                      <p>Criação dos recursos visuais (sprites) desenhados pixel a pixel, adaptando referências clássicas para contornar as severas limitações gráficas e de renderização do simulador.</p>
                     </div>
                   </div>
                 </div>

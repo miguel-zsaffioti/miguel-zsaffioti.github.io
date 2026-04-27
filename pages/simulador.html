@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Chaos Survival</title>
+  <title>Simulador de Elementos de um SO</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -42,11 +42,11 @@
       </nav>
 
       <div class="social-links d-flex justify-content-center align-items-center">
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="email"><i class="bi bi-envelope"></i></a>
-        <a href="#" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/miguel-saffioti/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:miguel.zsaffioti@gmail.com" target="_blank" class="email"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/migzs123/"  target="_blank" class="github"><i class="bi bi-github"></i></a>
         
-        <a href="#" class="itchio">
+        <a href="https://migzss.itch.io/" target="_blank" class="itchio">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 16px; height: 16px; filter: invert(1);">
         </a>
       </div>
@@ -64,7 +64,7 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="../index.html">Inicio</a></li>
-            <li class="current">Chaos Surival</li>
+            <li class="current">Simulador de Elementos de um SO</li>
           </ol>
         </nav>
       </div>
@@ -76,26 +76,22 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-media" data-aos="fade-up" data-aos-delay="150">
-              <img src="../assets/img/portfolio/PS-gif.webp" alt="Gameplay do Projeto" class="img-fluid w-100 rounded" loading="lazy">
+              <img src="../assets/img/portfolio/sistemas-operacionais.png" alt="Gameplay do Projeto" class="img-fluid w-100 rounded" loading="lazy">
             </div>
           </div>
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
               <h3>Informação do Projeto</h3>
               <ul>
-                <li><strong>Categoria</strong>: Game Development</li>
-                <li><strong>Engine</strong>: Unity</li>
-                <li><strong>Data do projeto</strong>: 04 Outubro, 2024</li>
+                <li><strong>Categoria</strong>: Backend</li>
+                <li><strong>Linguagem</strong>: Java SpringBoot</li>
+                <li><strong>Contexto</strong>: Disciplina de Sistemas Operacionais</li>
                 
                 <li class="d-flex align-items-center gap-2 mt-2">
                   <strong class="me-2">Links Relacionados:</strong> 
                   
-                  <a href="#" class="link-badge bg-github" title="Ver no GitHub">
+                  <a href="https://github.com/migzs123/ProjetoSO" target="_blank" class="link-badge bg-github" title="Ver no GitHub">
                     <i class="bi bi-github" style="font-size: 20px; line-height: 0;"></i>
-                  </a>
-
-                  <a href="#" class="link-badge bg-itchio" title="Jogar no Itch.io">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 20px; height: 20px; filter: invert(1);">
                   </a>
                 </li>
                 </ul>
@@ -106,46 +102,48 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Visão Geral</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+               O <strong> Simulador de Elementos de um Sistema Operacional</strong> é uma plataforma educacional e de testes construída para demonstrar na prática o comportamento de conceitos clássicos de Sistemas Operacionais. Com o frontend desenvolvido em React por outros integrantes do projeto, minha responsabilidade foi arquitetar e construir todo o motor por trás do simulador, focando em segurança, escalabilidade e comunicação de baixo nível.
               </p>
               <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
+                A arquitetura backend foi desenvolvida em Java utilizando Spring Boot. O grande desafio técnico foi criar um sistema capaz de receber comandos da interface e executar algoritmos nativos em C de forma isolada. Para isso, configurei e integrei o backend ao Docker, permitindo a execução segura de testes rigorosos, como simulações de processos CPU-Bound e IO-Bound dentro de containers.
               </p>
 
               <div class="features mt-4">
-                <h3>Principais Recursos</h3>
+                <h3>Principais Aspectos Técnicos</h3>
                 <div class="row gy-3">
+                  
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-check-circle-fill"></i>
-                      <h4>Responsive Design</h4>
-                      <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                      <i class="bi bi-box-seam"></i>
+                      <h4>Containerização com Docker</h4>
+                      <p>Configuração e integração do backend com Docker para executar códigos nativos em C de forma isolada. Garante um ambiente seguro (sandbox) para rodar processos sem comprometer o host.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-shield-check"></i>
-                      <h4>Advanced Security</h4>
-                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                      <i class="bi bi-broadcast"></i>
+                      <h4>WebSockets em Tempo Real</h4>
+                      <p>Implementação de comunicação bidirecional via WebSockets para a simulação do problema clássico Produtor-Consumidor, fazendo o streaming contínuo dos resultados de execução para o frontend (React).</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-graph-up"></i>
-                      <h4>Performance Optimization</h4>
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                      <i class="bi bi-cpu"></i>
+                      <h4>Simulação de Processos de SO</h4>
+                      <p>Desenvolvimento e controle de testes clássicos de Sistemas Operacionais. A API é capaz de acionar e monitorar algoritmos em C que demonstram certos aspectos de Sisetmas Operacionais em geral.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-gear"></i>
-                      <h4>Easy Integration</h4>
-                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                      <i class="bi bi-server"></i>
+                      <h4>Arquitetura Spring Boot</h4>
+                      <p>Construção de um servidor robusto em Java que atua como o cérebro do sistema, orquestrando perfeitamente a comunicação entre as requisições web do usuário e a execução em baixo nível.</p>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
