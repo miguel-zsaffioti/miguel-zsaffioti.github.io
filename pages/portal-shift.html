@@ -32,11 +32,11 @@
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i>Inicio</a></li>
-          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
-          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Curriculo</a></li>
-          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
+          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav_home">Inicio</span></a></li>
+          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">Sobre</span></a></li>
+          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Curriculo</span></a></li>
+          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_portfolio">Portfolio</span></a></li>
+          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contato</span></a></li>
         </ul>
       </nav>
 
@@ -47,6 +47,8 @@
         <a href="https://migzss.itch.io/" target="_blank" class="itchio">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 16px; height: 16px; filter: invert(1);">
         </a>
+
+        <button id="lang-switch-btn" class="lang-switch-btn" type="button" title="Change language / Mudar idioma">EN</button>
       </div>
 
     </div>
@@ -57,10 +59,10 @@
 
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Detalhes do Projeto</h1>
+        <h1 class="mb-2 mb-lg-0" data-i18n="project_details_title">Detalhes do Projeto</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
             <li class="current">Portal Shift</li>
           </ol>
         </nav>
@@ -81,14 +83,14 @@
           
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
-              <h3>Informação do Projeto</h3>
+              <h3 data-i18n="project_info_title">Informação do Projeto</h3>
               <ul>
-                <li><strong>Categoria</strong>: Game Development</li>
-                <li><strong>Engine</strong>: Unity / C#</li>
-                <li><strong>Contexto</strong>: Projeto de Treinamento</li>
+                <li><strong data-i18n="label_category">Categoria</strong>: Game Development</li>
+                <li><strong data-i18n="label_engine">Engine</strong>: Unity / C#</li>
+                <li><strong data-i18n="label_context">Contexto</strong>: <span data-i18n="portal_context">Projeto de Treinamento</span></li>
                 
                 <li class="d-flex align-items-center gap-2 mt-2">
-                  <strong class="me-2">Links:</strong> 
+                  <strong class="me-2" data-i18n="label_links_short">Links</strong>: 
 
                   <a href="https://fog-icmc.itch.io/portal-shift"  target="_blank" class="link-badge bg-itchio" title="Jogar no Itch.io">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io" style="width: 20px; height: 20px; filter: invert(1);">
@@ -100,31 +102,31 @@
 
           <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Visão Geral do Projeto</h2>
-              <p>
+              <h2 data-i18n="overview_title_project">Visão Geral do Projeto</h2>
+              <p data-i18n="portal_desc1">
                 <strong>Portal Shift</strong> foi desenvolvido como parte do meu processo de treinamento e integração no Fellowship of the Game (FoG). O objetivo central do projeto não era criar um escopo massivo, mas sim solidificar os fundamentos da Unity, estruturação de código em C# e o entendimento profundo sobre o gerenciamento de componentes e GameObjects.
               </p>
-              <p>
+              <p data-i18n="portal_desc2">
                 A mecânica central que construímos explora a modularidade dos controles. O jogo não possui um único código monolítico de movimento; em vez disso, implementamos um sistema onde diferentes scripts de movimentação são ativados e desativados dinamicamente. Conforme o jogador avança na fase e interage com áreas delimitadas, o sistema lê essas colisões e substitui o script atual do personagem, alterando fundamentalmente a forma como a física e os inputs respondem naquele cenário específico.
               </p>
 
               <div class="features mt-4">
-                <h3>Principais Aspectos Técnicos</h3>
+                <h3 data-i18n="technical_aspects_title">Principais Aspectos Técnicos</h3>
                 <div class="row gy-3">
                   
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                       <i class="bi bi-controller"></i>
-                      <h4>Movimentação Dinâmica</h4>
-                      <p>Implementação de múltiplos scripts de controle modulares, alterando a física e a resposta aos inputs do jogador em tempo real durante o gameplay.</p>
+                      <h4 data-i18n="portal_feat1_title">Movimentação Dinâmica</h4>
+                      <p data-i18n="portal_feat1_desc">Implementação de múltiplos scripts de controle modulares, alterando a física e a resposta aos inputs do jogador em tempo real durante o gameplay.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
                       <i class="bi bi-braces"></i>
-                      <h4>Gerenciamento de Componentes</h4>
-                      <p>Prática de arquitetura limpa na Unity, manipulando as funções <code>GetComponent</code> e o ciclo de vida dos objetos (Enable/Disable) para trocar mecânicas sem destruir o objeto principal.</p>
+                      <h4 data-i18n="portal_feat2_title">Gerenciamento de Componentes</h4>
+                      <p data-i18n="portal_feat2_desc">Prática de arquitetura limpa na Unity, manipulando as funções <code>GetComponent</code> e o ciclo de vida dos objetos (Enable/Disable) para trocar mecânicas sem destruir o objeto principal.</p>
                     </div>
                   </div>
 
@@ -164,6 +166,7 @@
   <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/i18n.js" data-i18n-base="../"></script>
   <script src="../assets/js/main.js"></script>
 
 </body>

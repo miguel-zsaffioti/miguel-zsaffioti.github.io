@@ -33,11 +33,11 @@
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i>Inicio</a></li>
-          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
-          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Curriculo</a></li>
-          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
+          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav_home">Inicio</span></a></li>
+          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">Sobre</span></a></li>
+          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Curriculo</span></a></li>
+          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_portfolio">Portfolio</span></a></li>
+          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contato</span></a></li>
         </ul>
       </nav>
 
@@ -48,6 +48,8 @@
         <a href="https://migzss.itch.io/" target="_blank" class="itchio">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 16px; height: 16px; filter: invert(1);">
         </a>
+
+        <button id="lang-switch-btn" class="lang-switch-btn" type="button" title="Change language / Mudar idioma">EN</button>
       </div>
 
     </div>
@@ -59,10 +61,10 @@
 
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Detalhes do Projeto</h1>
+        <h1 class="mb-2 mb-lg-0" data-i18n="project_details_title">Detalhes do Projeto</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
             <li class="current">Simulador de Elementos de um SO</li>
           </ol>
         </nav>
@@ -80,14 +82,14 @@
           </div>
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
-              <h3>Informação do Projeto</h3>
+              <h3 data-i18n="project_info_title">Informação do Projeto</h3>
               <ul>
-                <li><strong>Categoria</strong>: Backend</li>
-                <li><strong>Linguagem</strong>: Java SpringBoot</li>
-                <li><strong>Contexto</strong>: Disciplina de Sistemas Operacionais</li>
+                <li><strong data-i18n="label_category">Categoria</strong>: Backend</li>
+                <li><strong data-i18n="label_language">Linguagem</strong>: Java SpringBoot</li>
+                <li><strong data-i18n="label_context">Contexto</strong>: <span data-i18n="sim_context">Disciplina de Sistemas Operacionais</span></li>
                 
                 <li class="d-flex align-items-center gap-2 mt-2">
-                  <strong class="me-2">Links Relacionados:</strong> 
+                  <strong class="me-2" data-i18n="label_related_links">Links Relacionados</strong>: 
                   
                   <a href="https://github.com/miguel-zsaffioti/ProjetoSO" target="_blank" class="link-badge bg-github" title="Ver no GitHub">
                     <i class="bi bi-github" style="font-size: 20px; line-height: 0;"></i>
@@ -99,47 +101,47 @@
 
           <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Visão Geral</h2>
+              <h2 data-i18n="overview_title">Visão Geral</h2>
               <p>
                O <strong> Simulador de Elementos de um Sistema Operacional</strong> é uma plataforma educacional e de testes construída para demonstrar na prática o comportamento de conceitos clássicos de Sistemas Operacionais. Com o frontend desenvolvido em React por outros integrantes do projeto, minha responsabilidade foi arquitetar e construir todo o motor por trás do simulador, focando em segurança, escalabilidade e comunicação de baixo nível.
               </p>
-              <p>
+              <p data-i18n="sim_desc2">
                 A arquitetura backend foi desenvolvida em Java utilizando Spring Boot. O grande desafio técnico foi criar um sistema capaz de receber comandos da interface e executar algoritmos nativos em C de forma isolada. Para isso, configurei e integrei o backend ao Docker, permitindo a execução segura de testes rigorosos, como simulações de processos CPU-Bound e IO-Bound dentro de containers.
               </p>
 
               <div class="features mt-4">
-                <h3>Principais Aspectos Técnicos</h3>
+                <h3 data-i18n="technical_aspects_title">Principais Aspectos Técnicos</h3>
                 <div class="row gy-3">
                   
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                       <i class="bi bi-box-seam"></i>
-                      <h4>Containerização com Docker</h4>
-                      <p>Configuração e integração do backend com Docker para executar códigos nativos em C de forma isolada. Garante um ambiente seguro (sandbox) para rodar processos sem comprometer o host.</p>
+                      <h4 data-i18n="sim_feat1_title">Containerização com Docker</h4>
+                      <p data-i18n="sim_feat1_desc">Configuração e integração do backend com Docker para executar códigos nativos em C de forma isolada. Garante um ambiente seguro (sandbox) para rodar processos sem comprometer o host.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                       <i class="bi bi-broadcast"></i>
-                      <h4>WebSockets em Tempo Real</h4>
-                      <p>Implementação de comunicação bidirecional via WebSockets para a simulação do problema clássico Produtor-Consumidor, fazendo o streaming contínuo dos resultados de execução para o frontend (React).</p>
+                      <h4 data-i18n="sim_feat2_title">WebSockets em Tempo Real</h4>
+                      <p data-i18n="sim_feat2_desc">Implementação de comunicação bidirecional via WebSockets para a simulação do problema clássico Produtor-Consumidor, fazendo o streaming contínuo dos resultados de execução para o frontend (React).</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
                       <i class="bi bi-cpu"></i>
-                      <h4>Simulação de Processos de SO</h4>
-                      <p>Desenvolvimento e controle de testes clássicos de Sistemas Operacionais. A API é capaz de acionar e monitorar algoritmos em C que demonstram certos aspectos de Sisetmas Operacionais em geral.</p>
+                      <h4 data-i18n="sim_feat3_title">Simulação de Processos de SO</h4>
+                      <p data-i18n="sim_feat3_desc">Desenvolvimento e controle de testes clássicos de Sistemas Operacionais. A API é capaz de acionar e monitorar algoritmos em C que demonstram certos aspectos de Sisetmas Operacionais em geral.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
                       <i class="bi bi-server"></i>
-                      <h4>Arquitetura Spring Boot</h4>
-                      <p>Construção de um servidor robusto em Java que atua como o cérebro do sistema, orquestrando perfeitamente a comunicação entre as requisições web do usuário e a execução em baixo nível.</p>
+                      <h4 data-i18n="sim_feat4_title">Arquitetura Spring Boot</h4>
+                      <p data-i18n="sim_feat4_desc">Construção de um servidor robusto em Java que atua como o cérebro do sistema, orquestrando perfeitamente a comunicação entre as requisições web do usuário e a execução em baixo nível.</p>
                     </div>
                   </div>
 
@@ -182,6 +184,7 @@
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <script src="../assets/js/i18n.js" data-i18n-base="../"></script>
   <script src="../assets/js/main.js"></script>
 
 </body>

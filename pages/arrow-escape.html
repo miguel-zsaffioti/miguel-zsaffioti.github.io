@@ -33,11 +33,11 @@
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i>Inicio</a></li>
-          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
-          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Curriculo</a></li>
-          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
+          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav_home">Inicio</span></a></li>
+          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">Sobre</span></a></li>
+          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Curriculo</span></a></li>
+          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_portfolio">Portfolio</span></a></li>
+          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contato</span></a></li>
         </ul>
       </nav>
 
@@ -48,6 +48,8 @@
         <a href="https://migzss.itch.io/" target="_blank" class="itchio">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 16px; height: 16px; filter: invert(1);">
         </a>
+
+        <button id="lang-switch-btn" class="lang-switch-btn" type="button" title="Change language / Mudar idioma">EN</button>
       </div>
 
     </div>
@@ -59,10 +61,10 @@
 
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Detalhes do Projeto</h1>
+        <h1 class="mb-2 mb-lg-0" data-i18n="project_details_title">Detalhes do Projeto</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
             <li class="current">Arrow Escape</li>
           </ol>
         </nav>
@@ -80,14 +82,14 @@
           </div>
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
-              <h3>Informação do Projeto</h3>
+              <h3 data-i18n="project_info_title">Informação do Projeto</h3>
               <ul>
-               <li><strong>Categoria</strong>: Game Development</li>
-                <li><strong>Engine</strong>: Unity / C#</li>
-                <li><strong>Contexto</strong>: Primeiro jogo Unity refeito</li>
+               <li><strong data-i18n="label_category">Categoria</strong>: Game Development</li>
+                <li><strong data-i18n="label_engine">Engine</strong>: Unity / C#</li>
+                <li><strong data-i18n="label_context">Contexto</strong>: <span data-i18n="arrow_context">Primeiro jogo Unity refeito</span></li>
                 
                 <li class="d-flex align-items-center gap-2 mt-2">
-                  <strong class="me-2">Links Relacionados:</strong> 
+                  <strong class="me-2" data-i18n="label_related_links">Links Relacionados</strong>: 
                   
                   <a href="https://github.com/miguel-zsaffioti/ArrowEscape" target="_blank" class="link-badge bg-github" title="Ver no GitHub">
                     <i class="bi bi-github" style="font-size: 20px; line-height: 0;"></i>
@@ -103,7 +105,7 @@
 
           <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Visão Geral</h2>
+              <h2 data-i18n="overview_title">Visão Geral</h2>
               <p>
                 <strong>Arrow Escape</strong> foi meu primeiríssimo contato prático com a Unity. Originalmente, desenvolvi a base desse projeto para o processo seletivo do Fellowship of the Game (FoG). Decidi revisitá-lo recentemente para aplicar o amadurecimento técnico que adquiri desde então, transformando o protótipo inicial em um jogo finalizado e estruturado.
               <p>
@@ -111,38 +113,38 @@
               </p>
 
               <div class="features mt-4">
-                <h3>Principais Aspectos Técnicos</h3>
+                <h3 data-i18n="technical_aspects_title">Principais Aspectos Técnicos</h3>
                 <div class="row gy-3">
                   
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                       <i class="bi bi-diagram-3"></i>
-                      <h4>Arquitetura State Machine</h4>
-                      <p>Primeira implementação prática de uma Máquina de Estados para controlar o jogador. Substituição de lógicas condicionais complexas por um sistema modular, separando perfeitamente os estados de pulo, corrida e queda.</p>
+                      <h4 data-i18n="arrow_feat1_title">Arquitetura State Machine</h4>
+                      <p data-i18n="arrow_feat1_desc">Primeira implementação prática de uma Máquina de Estados para controlar o jogador. Substituição de lógicas condicionais complexas por um sistema modular, separando perfeitamente os estados de pulo, corrida e queda.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                       <i class="bi bi-grid-1x2"></i>
-                      <h4>Level Design com Tilesets</h4>
-                      <p>Construção e polimento dos cenários utilizando ferramentas de Tileset da Unity. Integração de assets gratuitos da comunidade para elevar a qualidade visual e a ambientação das fases.</p>
+                      <h4 data-i18n="arrow_feat2_title">Level Design com Tilesets</h4>
+                      <p data-i18n="arrow_feat2_desc">Construção e polimento dos cenários utilizando ferramentas de Tileset da Unity. Integração de assets gratuitos da comunidade para elevar a qualidade visual e a ambientação das fases.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
                       <i class="bi bi-code-square"></i>
-                      <h4>Refatoração de Código Legado</h4>
-                      <p>Retorno a um código construído no início da minha jornada para aplicar novos conhecimentos de Engenharia de Software, transformando scripts acoplados em uma arquitetura limpa e escalável.</p>
+                      <h4 data-i18n="arrow_feat3_title">Refatoração de Código Legado</h4>
+                      <p data-i18n="arrow_feat3_desc">Retorno a um código construído no início da minha jornada para aplicar novos conhecimentos de Engenharia de Software, transformando scripts acoplados em uma arquitetura limpa e escalável.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
                       <i class="bi bi-controller"></i>
-                      <h4>Mecânicas de Precisão 2D</h4>
-                      <p>Ajuste fino da física do Rigidbody2D e detecção de colisões para criar controles responsivos, essenciais para desviar de armadilhas e calcular saltos precisos.</p>
+                      <h4 data-i18n="arrow_feat4_title">Mecânicas de Precisão 2D</h4>
+                      <p data-i18n="arrow_feat4_desc">Ajuste fino da física do Rigidbody2D e detecção de colisões para criar controles responsivos, essenciais para desviar de armadilhas e calcular saltos precisos.</p>
                     </div>
                   </div>
 
@@ -185,6 +187,7 @@
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <script src="../assets/js/i18n.js" data-i18n-base="../"></script>
   <script src="../assets/js/main.js"></script>
 
 </body>

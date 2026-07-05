@@ -33,11 +33,11 @@
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i>Inicio</a></li>
-          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
-          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Curriculo</a></li>
-          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
+          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav_home">Inicio</span></a></li>
+          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">Sobre</span></a></li>
+          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Curriculo</span></a></li>
+          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_portfolio">Portfolio</span></a></li>
+          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contato</span></a></li>
         </ul>
       </nav>
 
@@ -48,6 +48,8 @@
         <a href="https://migzss.itch.io/" target="_blank" class="itchio">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 16px; height: 16px; filter: invert(1);">
         </a>
+
+        <button id="lang-switch-btn" class="lang-switch-btn" type="button" title="Change language / Mudar idioma">EN</button>
       </div>
 
     </div>
@@ -59,10 +61,10 @@
 
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Detalhes do Projeto</h1>
+        <h1 class="mb-2 mb-lg-0" data-i18n="project_details_title">Detalhes do Projeto</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
             <li class="current">Passo Frágil</li>
           </ol>
         </nav>
@@ -80,14 +82,14 @@
           </div>
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
-              <h3>Informação do Projeto</h3>
+              <h3 data-i18n="project_info_title">Informação do Projeto</h3>
               <ul>
-                <li><strong>Categoria</strong>: Game Development</li>
-                <li><strong>Linguagem</strong>: Java</li>
-                <li><strong>Contexto</strong>: Disciplina de Programação Orientada a Objetos</li>
+                <li><strong data-i18n="label_category">Categoria</strong>: Game Development</li>
+                <li><strong data-i18n="label_language">Linguagem</strong>: Java</li>
+                <li><strong data-i18n="label_context">Contexto</strong>: <span data-i18n="fragil_context">Disciplina de Programação Orientada a Objetos</span></li>
                 
                 <li class="d-flex align-items-center gap-2 mt-2">
-                  <strong class="me-2">Links Relacionados:</strong> 
+                  <strong class="me-2" data-i18n="label_related_links">Links Relacionados</strong>: 
                   
                   <a href="https://github.com/miguel-zsaffioti/Projeto-POO" target="_blank" class="link-badge bg-github" title="Ver no GitHub">
                     <i class="bi bi-github" style="font-size: 20px; line-height: 0;"></i>
@@ -99,47 +101,47 @@
 
           <div class="col-lg-12">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Visão Geral</h2>
-              <p>
+              <h2 data-i18n="overview_title">Visão Geral</h2>
+              <p data-i18n="fragil_desc1">
                 Desenvolvido como projeto prático para a disciplina de Programação Orientada a Objetos (POO), este jogo é um quebra-cabeça (puzzle) baseado em tiles inspirado no nostálgico minigame "Gelo Fino" do Club Penguin. A premissa mecânica é simples, mas desafiadora: o jogador controla um pinguim que deve traçar uma rota até a saída, mas cada bloco de gelo pisado derrete imediatamente, impedindo qualquer retrocesso e exigindo planejamento estratégico.
               </p>
-              <p>
+              <p data-i18n="fragil_desc2">
                 Construído inteiramente do zero utilizando Java, o projeto serviu como um laboratório excelente para aplicar os pilares da Orientação a Objetos no desenvolvimento de sistemas interativos. Para aprofundar o level design, expandi o conceito original introduzindo diferentes mecânicas de itens coletáveis, que aplicam efeitos especiais e adicionam novas camadas de complexidade à resolução das fases. Os recursos visuais foram construídos mesclando pixel art original de minha autoria com adaptações de referências clássicas, garantindo o carisma e a legibilidade visual do puzzle.
               </p>
 
               <div class="features mt-4">
-                <h3>Principais Aspectos Técnicos</h3>
+                <h3 data-i18n="technical_aspects_title">Principais Aspectos Técnicos</h3>
                 <div class="row gy-3">
                   
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                       <i class="bi bi-cup-hot-fill"></i>
-                      <h4>Programação Orientada a Objetos</h4>
-                      <p>Desenvolvimento 100% em Java, aplicando na prática conceitos de Herança, Polimorfismo e Encapsulamento para estruturar as entidades do jogo (jogador, pisos e itens) de forma modular e limpa.</p>
+                      <h4 data-i18n="fragil_feat1_title">Programação Orientada a Objetos</h4>
+                      <p data-i18n="fragil_feat1_desc">Desenvolvimento 100% em Java, aplicando na prática conceitos de Herança, Polimorfismo e Encapsulamento para estruturar as entidades do jogo (jogador, pisos e itens) de forma modular e limpa.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                       <i class="bi bi-puzzle"></i>
-                      <h4>Lógica de Grid e Puzzle</h4>
-                      <p>Implementação de um sistema matemático de movimentação baseada em tiles (matriz), lidando com a atualização dinâmica dos estados do chão (derretimento) e verificação de condições de vitória/derrota.</p>
+                      <h4 data-i18n="fragil_feat2_title">Lógica de Grid e Puzzle</h4>
+                      <p data-i18n="fragil_feat2_desc">Implementação de um sistema matemático de movimentação baseada em tiles (matriz), lidando com a atualização dinâmica dos estados do chão (derretimento) e verificação de condições de vitória/derrota.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
                       <i class="bi bi-star-fill"></i>
-                      <h4>Sistema de Modificadores</h4>
-                      <p>Criação de uma arquitetura expansível para itens coletáveis, permitindo que a coleta de objetos pelo mapa ative efeitos especiais que alteram as regras do puzzle em tempo real.</p>
+                      <h4 data-i18n="fragil_feat3_title">Sistema de Modificadores</h4>
+                      <p data-i18n="fragil_feat3_desc">Criação de uma arquitetura expansível para itens coletáveis, permitindo que a coleta de objetos pelo mapa ative efeitos especiais que alteram as regras do puzzle em tempo real.</p>
                     </div>
                   </div>
 
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
                       <i class="bi bi-palette"></i>
-                      <h4>Renderização e Arte 2D</h4>
-                      <p>Construção do motor de renderização visual no próprio Java, mesclando assets originais criados por mim com adaptações de recursos da internet para dar vida à interface e aos personagens.</p>
+                      <h4 data-i18n="fragil_feat4_title">Renderização e Arte 2D</h4>
+                      <p data-i18n="fragil_feat4_desc">Construção do motor de renderização visual no próprio Java, mesclando assets originais criados por mim com adaptações de recursos da internet para dar vida à interface e aos personagens.</p>
                     </div>
                   </div>
 
@@ -182,6 +184,7 @@
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <script src="../assets/js/i18n.js" data-i18n-base="../"></script>
   <script src="../assets/js/main.js"></script>
 
 </body>

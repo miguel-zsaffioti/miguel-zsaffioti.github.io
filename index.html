@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt" id="html-root">
 
 <head>
   <meta charset="utf-8">
@@ -44,11 +44,11 @@
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Inicio</a></li>
-          <li><a href="#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Curriculo</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav_home">Inicio</span></a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">Sobre</span></a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Curriculo</span></a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_portfolio">Portfolio</span></a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contato</span></a></li>
         </ul>
       </nav>
 
@@ -59,6 +59,8 @@
         <a href="https://migzss.itch.io/" target="_blank" class="itchio">
           <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 16px; height: 16px; filter: invert(1);">
         </a>
+
+        <button id="lang-switch-btn" class="lang-switch-btn" type="button" title="Change language / Mudar idioma">EN</button>
       </div>
 
     </div>
@@ -84,12 +86,12 @@
               <div class="hero-text">
                 <h1>Port<span class="accent-text">Folio</span></h1>
                 <h2>Miguel Saffioti</h2>
-                <p class="lead">Sou um <span class="typed" data-typed-items="Game Developer, Backend Developer"></span></p>
-                <p class="description">Desenvolvedor apaixonado por construir o que move a tecnologia. Do desenvolvimento de sistemas backend resilientes à programação de gameplay e gráficos, meu objetivo é criar soluções robustas nos bastidores e fluidas na tela.</p>
+                <p class="lead"><span data-i18n="hero_lead">Sou um</span> <span class="typed" data-typed-items="Game Developer, Backend Developer" data-i18n-typed-pt="Game Developer, Backend Developer" data-i18n-typed-en="Game Developer, Backend Developer"></span></p>
+                <p class="description" data-i18n="hero_description">Desenvolvedor apaixonado por construir o que move a tecnologia. Do desenvolvimento de sistemas backend resilientes à programação de gameplay e gráficos, meu objetivo é criar soluções robustas nos bastidores e fluidas na tela.</p>
 
                 <div class="hero-actions">
-                  <a href="#portfolio" class="btn btn-primary">Veja meu trabalho</a>
-                  <a href="#contact" class="btn btn-outline">Entre em contato</a>
+                  <a href="#portfolio" class="btn btn-primary" data-i18n="hero_btn_work">Veja meu trabalho</a>
+                  <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">Entre em contato</a>
                 </div>
 
                <div class="social-links">
@@ -139,7 +141,7 @@
 
               <div class="profile-content">
                 <h3>Miguel Saffioti</h3>
-                <p class="profession">Game Developer &amp; Backend Developer</p>
+                <p class="profession" data-i18n="profile_role">Game Developer &amp; Backend Developer</p>
 
                 <div class="contact-links">
                   <a href="#" class="contact-item" onclick="copyEmail(event)">
@@ -158,33 +160,33 @@
           <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
               <div class="section-header">
-                <span class="badge-text">Me conheça</span>
-                <h2>Transformando Linhas de Código em Soluções</h2>
+                <span class="badge-text" data-i18n="about_badge">Me conheça</span>
+                <h2 data-i18n="about_title">Transformando Linhas de Código em Soluções</h2>
               </div>
 
               <div class="description">
-                <p>Mais do que apenas escrever código, meu interesse está em criar soluções eficientes. Minha formação em Sistemas de Informação me proporcionou uma base analítica forte, que procuro aplicar em todas as etapas do desenvolvimento, desde o planejamento da arquitetura até a implementação.</p>
+                <p data-i18n="about_desc1">Mais do que apenas escrever código, meu interesse está em criar soluções eficientes. Minha formação em Sistemas de Informação me proporcionou uma base analítica forte, que procuro aplicar em todas as etapas do desenvolvimento, desde o planejamento da arquitetura até a implementação.</p>
 
-                <p>Seja desenvolvendo as lógicas de movimentação e sistemas para um jogo isométrico na Unity, ou estruturando as rotas de uma API com Spring Boot, trabalho com o mesmo nível de dedicação. Busco sempre expandir meu leque de ferramentas para me tornar um desenvolvedor cada vez mais versátil.</p>
+                <p data-i18n="about_desc2">Seja desenvolvendo as lógicas de movimentação e sistemas para um jogo isométrico na Unity, ou estruturando as rotas de uma API com Spring Boot, trabalho com o mesmo nível de dedicação. Busco sempre expandir meu leque de ferramentas para me tornar um desenvolvedor cada vez mais versátil.</p>
               </div>
 
               <div class="details-grid">
                 <div class="detail-row">
                   <div class="detail-item">
-                    <span class="detail-label">Educação</span>
-                    <span class="detail-value">Bacharelado em Sistemas de Informacão, USP</span>
+                    <span class="detail-label" data-i18n="label_education">Educação</span>
+                    <span class="detail-value" data-i18n="value_education">Bacharelado em Sistemas de Informacão, USP</span>
                   </div>
                   <div class="detail-item">
-                    <span class="detail-label">Línguas</span>
-                    <span class="detail-value">Português, Inglês</span>
+                    <span class="detail-label" data-i18n="label_languages">Línguas</span>
+                    <span class="detail-value" data-i18n="value_languages">Português, Inglês</span>
                   </div>
                 </div>
               </div>
 
               <div class="cta-section">
-                <a href="#" class="btn btn-primary">
+                <a href="#" class="btn btn-primary" id="download-cv-btn">
                   <i class="bi bi-download"></i>
-                  Baixar Currículo
+                  <span data-i18n="btn_download_cv">Baixar Currículo</span>
                 </a>
               </div>
             </div>
@@ -200,7 +202,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
+        <h2 data-i18n="skills_title">Skills</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -208,7 +210,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-              <h3>Game Development</h3>
+              <h3 data-i18n="skills_gamedev">Game Development</h3>
               <div class="skills-animation">
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
@@ -218,7 +220,7 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Domínio na linguagem para desenvolvimento tanto para Godot quanto para Unity</div>
+                  <div class="skill-tooltip" data-i18n="skill_tip_csharp">Domínio na linguagem para desenvolvimento tanto para Godot quanto para Unity</div>
                 </div>
 
                 <div class="skill-item">
@@ -229,7 +231,7 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Experiência em desenvolvimento de jogos em 2D e 3D</div>
+                  <div class="skill-tooltip" data-i18n="skill_tip_unity">Experiência em desenvolvimento de jogos em 2D e 3D</div>
                 </div>
 
                 <div class="skill-item">
@@ -240,7 +242,7 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Experiência em desenvolvimento de jogos em 3D</div>
+                  <div class="skill-tooltip" data-i18n="skill_tip_godot">Experiência em desenvolvimento de jogos em 3D</div>
                 </div>
 
                 
@@ -250,7 +252,7 @@
 
           <div class="col-lg-6">
             <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-              <h3>Backend Development</h3>
+              <h3 data-i18n="skills_backend">Backend Development</h3>
               <div class="skills-animation">
                 <div class="skill-item">
                   <div class="d-flex justify-content-between align-items-center">
@@ -260,7 +262,7 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">APIs REST com Java SpringBoot</div>
+                  <div class="skill-tooltip" data-i18n="skill_tip_java">APIs REST com Java SpringBoot</div>
                 </div>
 
                 <div class="skill-item">
@@ -271,7 +273,7 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Design de banco, otimização e construcão de queries</div>
+                  <div class="skill-tooltip" data-i18n="skill_tip_sql">Design de banco, otimização e construcão de queries</div>
                 </div>
 
                 <div class="skill-item">
@@ -282,7 +284,7 @@
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <div class="skill-tooltip">Desenvolvimento com FastAPI</div>
+                  <div class="skill-tooltip" data-i18n="skill_tip_python">Desenvolvimento com FastAPI</div>
                 </div>
               </div>
             </div><!-- End Backend Skills -->
@@ -298,8 +300,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Curriculo
-        </h2>
+        <h2 data-i18n="resume_title">Curriculo</h2>
       </div>
 
         <div class="row gy-4">
@@ -310,10 +311,10 @@
                 <img src="assets/img/profile/foto3.jpeg" alt="Profile" class="img-fluid rounded">
               </div>
 
-              <h3>Sumário</h3>
-              <p>Desenvolvedor em início de carreira, movido pela curiosidade de criar sistemas do zero. Tenho experiência prática desenvolvendo projetos pessoais nas áreas de Game Dev (focado em lógicas e mecânicas em Unity e Godot) e Backend (criando serviços e APIs com Spring Boot e FastAPI). Valorizo muito o aprendizado contínuo, a resolução de problemas lógicos e a busca constante por escrever um código limpo e organizado</p>
+              <h3 data-i18n="resume_summary_title">Sumário</h3>
+              <p data-i18n="resume_summary_text">Desenvolvedor em início de carreira, movido pela curiosidade de criar sistemas do zero. Tenho experiência prática desenvolvendo projetos pessoais nas áreas de Game Dev (focado em lógicas e mecânicas em Unity e Godot) e Backend (criando serviços e APIs com Spring Boot e FastAPI). Valorizo muito o aprendizado contínuo, a resolução de problemas lógicos e a busca constante por escrever um código limpo e organizado</p>
 
-              <h3 class="mt-4">Informações de Contato</h3>
+              <h3 class="mt-4" data-i18n="resume_contact_title">Informações de Contato</h3>
               <ul class="contact-info list-unstyled">
                 <li><i class="bi bi-geo-alt"></i> <span data-contact="location"></span></li>
                 <li><i class="bi bi-envelope"></i> <a href="#" onclick="copyEmail(event)" data-contact="email"></a></li>
@@ -327,46 +328,46 @@
           <div class="col-lg-8 ps-4 ps-lg-5">
             <!-- Experience Section -->
             <div class="resume-section" data-aos="fade-up">
-              <h3><i class="bi bi-briefcase me-2"></i>Experiência Profissional</h3>
+              <h3><i class="bi bi-briefcase me-2"></i><span data-i18n="resume_exp_title">Experiência Profissional</span></h3>
 
               <div class="resume-item">
-                <h4>Desenvolvedor de Jogos</h4>
-                <h5>2024 - Presente</h5>
+                <h4 data-i18n="job1_title">Desenvolvedor de Jogos</h4>
+                <h5 data-i18n="job1_period">2024 - Presente</h5>
                 <p class="company"><i class="bi bi-building"></i> Fellowship of the Game</p>
                 <ul>
-                  <li>Desenvolvimento de mecânicas de gameplay e arquitetura de sistemas utilizando Unity e Godot.</li>
-                  <li>Programação focada em C#, com implementação de lógicas de IA, física e controle de estados.</li>
-                  <li>Trabalho colaborativo em equipes multidisciplinares para a ideação, prototipagem e entrega de projetos interativos.</li>
+                  <li data-i18n="job1_bullet1">Desenvolvimento de mecânicas de gameplay e arquitetura de sistemas utilizando Unity e Godot.</li>
+                  <li data-i18n="job1_bullet2">Programação focada em C#, com implementação de lógicas de IA, física e controle de estados.</li>
+                  <li data-i18n="job1_bullet3">Trabalho colaborativo em equipes multidisciplinares para a ideação, prototipagem e entrega de projetos interativos.</li>
                 </ul>
               </div>
 
               <div class="resume-item">
-                <h4>Estagiário de Consultoria</h4>
-                <h5>Fevereiro 2022 - Outubro 2022</h5>
+                <h4 data-i18n="job2_title">Estagiário de Consultoria</h4>
+                <h5 data-i18n="job2_period">Fevereiro 2022 - Outubro 2022</h5>
                 <p class="company"><i class="bi bi-building"></i> Sensedia</p>
                 <ul>
-                  <li>Apoio na estruturação e suporte de integrações e consumo de APIs.</li>
-                  <li>Auxílio na resolução de problemas técnicos e no entendimento de regras de negócio para soluções escaláveis.</li>
+                  <li data-i18n="job2_bullet1">Apoio na estruturação e suporte de integrações e consumo de APIs.</li>
+                  <li data-i18n="job2_bullet2">Auxílio na resolução de problemas técnicos e no entendimento de regras de negócio para soluções escaláveis.</li>
                 </ul>
               </div>
             </div>
 
             <!-- Education Section -->
             <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
-              <h3><i class="bi bi-mortarboard me-2"></i>Educação</h3>
+              <h3><i class="bi bi-mortarboard me-2"></i><span data-i18n="resume_edu_title">Educação</span></h3>
 
               <div class="resume-item">
-                <h4>Bacharelado em Sistemas de Informação</h4>
-                <h5>2024 - Presente</h5>
+                <h4 data-i18n="edu1_title">Bacharelado em Sistemas de Informação</h4>
+                <h5 data-i18n="edu1_period">2024 - Presente</h5>
                 <p class="company"><i class="bi bi-building"></i> Universidade de São Paulo (USP)</p>
-                <p>Foco em engenharia de software e visão de negócio.</p>
+                <p data-i18n="edu1_desc">Foco em engenharia de software e visão de negócio.</p>
               </div>
 
               <div class="resume-item">
-                <h4>Técnico de Informática</h4>
-                <h5>2019 - 2021</h5>
+                <h4 data-i18n="edu2_title">Técnico de Informática</h4>
+                <h5 data-i18n="edu2_period">2019 - 2021</h5>
                 <p class="company"><i class="bi bi-building"></i> Colégio Técnico de Limeira (COTIL)</p>
-                <p>Primeiros passos no desenvolvimento de software e noções fundamentais de modelagem e consulta a banco de dados.</p>
+                <p data-i18n="edu2_desc">Primeiros passos no desenvolvimento de software e noções fundamentais de modelagem e consulta a banco de dados.</p>
               </div>
             </div>
 
@@ -382,7 +383,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2 data-i18n="portfolio_title_h2">Portfolio</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -393,9 +394,9 @@
             <div class="col-lg-3 filter-sidebar">
               <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
                 <ul class="portfolio-filters isotope-filters">
-                  <li data-filter="*" class="filter-active">Todos os Projetos</li>
-                  <li data-filter=".filter-games">Jogos</li>
-                  <li data-filter=".filter-backend">Backend</li>
+                  <li data-filter="*" class="filter-active" data-i18n="filter_all">Todos os Projetos</li>
+                  <li data-filter=".filter-games" data-i18n="filter_games">Jogos</li>
+                  <li data-filter=".filter-backend" data-i18n="filter_backend">Backend</li>
                 </ul>
               </div>
             </div>
@@ -408,7 +409,7 @@
                     <img src="assets/img/portfolio/PS-img1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Jogos</span>
+                        <span class="category" data-i18n="filter_games">Jogos</span>
                         <h4>Portal Shift</h4>
                         <div class="portfolio-links">
                           <a href="pages/portal-shift.html" title="Detalhes"><i class="bi bi-arrow-right"></i></a>
@@ -423,7 +424,7 @@
                     <img src="assets/img/portfolio/CS-img1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Jogos</span>
+                        <span class="category" data-i18n="filter_games">Jogos</span>
                         <h4>Chaos Survival</h4>
                         <div class="portfolio-links">
                           <a href="pages/chaos-survival.html" title="Detalhes"><i class="bi bi-arrow-right"></i></a>
@@ -438,7 +439,7 @@
                     <img src="assets/img/portfolio/AS-img1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Jogos</span>
+                        <span class="category" data-i18n="filter_games">Jogos</span>
                         <h4>Arrow Escape</h4>
                         <div class="portfolio-links">
                           <a href="pages/arrow-escape.html" title="Detalhes"><i class="bi bi-arrow-right"></i></a>
@@ -453,7 +454,7 @@
                     <img src="assets/img/portfolio/miniDino.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Jogos</span>
+                        <span class="category" data-i18n="filter_games">Jogos</span>
                         <h4>Mini Dino</h4>
                         <div class="portfolio-links">
                           <a href="pages/mini-dino.html" title="Detalhes"><i class="bi bi-arrow-right"></i></a>
@@ -468,7 +469,7 @@
                     <img src="assets/img/portfolio/PF-img1.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Jogos</span>
+                        <span class="category" data-i18n="filter_games">Jogos</span>
                         <h4>Passo Frágil</h4>
                         <div class="portfolio-links">
                           <a href="pages/passo-fragil.html" title="Detalhes"><i class="bi bi-arrow-right"></i></a>
@@ -484,8 +485,8 @@
                     <img src="assets/img/portfolio/sistemas-operacionais.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Backend</span>
-                        <h4>Simulador de Elementos de um SO</h4>
+                        <span class="category" data-i18n="filter_backend">Backend</span>
+                        <h4 data-i18n="proj_simulador">Simulador de Elementos de um SO</h4>
                         <div class="portfolio-links">
                           <a href="pages/simulador.html" title="Detalhes"><i class="bi bi-arrow-right"></i></a>
                         </div>
@@ -500,8 +501,8 @@
                     <img src="assets/img/portfolio/limepezaUrbana.avif" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Backend</span>
-                        <h4>Projeto Limpeza Urbana</h4>
+                        <span class="category" data-i18n="filter_backend">Backend</span>
+                        <h4 data-i18n="proj_limpeza">Projeto Limpeza Urbana</h4>
                         <div class="portfolio-links">
                           <a href="pages/limpeza-urbana.html" title="Detalhes"><i class="bi bi-arrow-right"></i></a>
                         </div>
@@ -526,7 +527,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contato</h2>
+        <h2 data-i18n="contact_title">Contato</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -534,15 +535,15 @@
         <div class="row g-4 g-lg-5">
           <div class="col-lg-5">
             <div class="info-box">
-              <h3>Informações de Contato</h3>
-              <p>Entre em contato!</p>
+              <h3 data-i18n="resume_contact_title">Informações de Contato</h3>
+              <p data-i18n="contact_subtitle">Entre em contato!</p>
 
               <div class="info-item">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
                 </div>
                 <div class="content">
-                  <h4>Localização</h4>
+                  <h4 data-i18n="contact_label_location">Localização</h4>
                   <p data-contact="location"></p>
                 </div>
               </div>
@@ -552,7 +553,7 @@
                   <i class="bi bi-envelope"></i>
                 </div>
                 <div class="content">
-                  <h4>Email</h4>
+                  <h4 data-i18n="contact_label_email">Email</h4>
                   <p><a href="#" onclick="copyEmail(event)" data-contact="email"></a></p>
                 </div>
               </div>
@@ -561,7 +562,7 @@
                   <i class="bi bi-linkedin"></i>
                 </div>
                 <div class="content">
-                  <h4>LinkedIn</h4>
+                  <h4 data-i18n="contact_label_linkedin">LinkedIn</h4>
                   <p><a href="#" target="_blank" data-contact="linkedin-user"></a></p>
                 </div>
               </div>
@@ -572,33 +573,33 @@
 
           <div class="col-lg-7">
             <div class="contact-form">
-              <h3>Entre em contato</h3>
+              <h3 data-i18n="contact_form_title">Entre em contato</h3>
 
               <form id="contact-form" class="php-email-form">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Nome" required="">
+                    <input type="text" name="name" class="form-control" data-i18n-placeholder="ph_name" placeholder="Nome" required="">
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                    <input type="email" class="form-control" name="email" data-i18n-placeholder="ph_email" placeholder="Email" required="">
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+                    <input type="text" class="form-control" name="subject" data-i18n-placeholder="ph_subject" placeholder="Assunto" required="">
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
+                    <textarea class="form-control" name="message" rows="6" data-i18n-placeholder="ph_message" placeholder="Mensagem" required=""></textarea>
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Carregando</div>
+                    <div class="loading" data-i18n="form_loading">Carregando</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
+                    <div class="sent-message" data-i18n="form_sent">Sua mensagem foi enviada. Obrigado!</div>
 
-                    <button type="submit" class="btn">Enviar mensagem</button>
+                    <button type="submit" class="btn" data-i18n="form_submit">Enviar mensagem</button>
                   </div>
 
                 </div>
@@ -651,6 +652,9 @@
 
   <!-- EmailJS SDK (envia o formulário de contato sem precisar de backend) -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Sistema de tradução (PT/EN) -->
+  <script src="assets/js/i18n.js" data-i18n-base=""></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
