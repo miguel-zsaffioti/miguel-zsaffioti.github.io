@@ -164,6 +164,17 @@
   "sim_feat2_desc": "Implemented bidirectional WebSocket communication for simulating the classic Producer-Consumer problem, continuously streaming execution results to the frontend (React).",
   "sim_feat3_title": "OS Process Simulation",
   "sim_feat3_desc": "Developed and controlled classic Operating Systems tests. The API can trigger and monitor C algorithms that demonstrate various general Operating Systems concepts.",
+  "copy_email_title": "Copy email",
+  "view_github_title": "View on GitHub",
+  "play_itchio_title": "Play on Itch.io",
+  "gameplay_alt": "Project Gameplay",
+  "portal_gameplay_alt": "Portal Shift Gameplay",
+  "sim_page_title": "OS Elements Simulator",
+  "portal_page_title": "Portal Shift - Details",
+  "portal_page_description": "Unity game development project",
+  "details_link_title": "Details",
+  "itchio_logo_alt": "Itch.io",
+
   "sim_feat4_title": "Spring Boot Architecture",
   "sim_feat4_desc": "Built a robust Java server that acts as the system's brain, seamlessly orchestrating communication between the user's web requests and the low-level execution."
 }

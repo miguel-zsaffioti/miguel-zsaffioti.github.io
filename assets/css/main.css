@@ -2617,6 +2617,9 @@
 # Language Switch Button
 --------------------------------------------------------------*/
 .lang-switch-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;

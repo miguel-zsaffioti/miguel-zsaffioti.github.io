@@ -164,6 +164,17 @@
   "sim_feat2_desc": "Implementação de comunicação bidirecional via WebSockets para a simulação do problema clássico Produtor-Consumidor, fazendo o streaming contínuo dos resultados de execução para o frontend (React).",
   "sim_feat3_title": "Simulação de Processos de SO",
   "sim_feat3_desc": "Desenvolvimento e controle de testes clássicos de Sistemas Operacionais. A API é capaz de acionar e monitorar algoritmos em C que demonstram certos aspectos de Sistemas Operacionais em geral.",
+  "copy_email_title": "Copiar e-mail",
+  "view_github_title": "Ver no GitHub",
+  "play_itchio_title": "Jogar no Itch.io",
+  "gameplay_alt": "Gameplay do Projeto",
+  "portal_gameplay_alt": "Gameplay do Portal Shift",
+  "sim_page_title": "Simulador de Elementos de um SO",
+  "portal_page_title": "Portal Shift - Detalhes",
+  "portal_page_description": "Projeto de desenvolvimento de jogos em Unity",
+  "details_link_title": "Detalhes",
+  "itchio_logo_alt": "Itch.io",
+
   "sim_feat4_title": "Arquitetura Spring Boot",
   "sim_feat4_desc": "Construção de um servidor robusto em Java que atua como o cérebro do sistema, orquestrando perfeitamente a comunicação entre as requisições web do usuário e a execução em baixo nível."
 }

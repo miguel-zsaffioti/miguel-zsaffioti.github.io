@@ -46,6 +46,39 @@ function applyTranslations(translations) {
     }
   });
 
+  // Atributo title (tooltips) — ex: "Ver no GitHub" / "View on GitHub"
+  document.querySelectorAll('[data-i18n-title]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-title');
+    if (translations[key] !== undefined) {
+      el.setAttribute('title', translations[key]);
+    }
+  });
+
+  // Atributo alt (imagens)
+  document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-alt');
+    if (translations[key] !== undefined) {
+      el.setAttribute('alt', translations[key]);
+    }
+  });
+
+  // Meta tags (description, keywords) via data-i18n-content
+  document.querySelectorAll('[data-i18n-content]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-content');
+    if (translations[key] !== undefined) {
+      el.setAttribute('content', translations[key]);
+    }
+  });
+
+  // <title> da aba do navegador
+  const titleTag = document.querySelector('title[data-i18n-title-tag]');
+  if (titleTag) {
+    const key = titleTag.getAttribute('data-i18n-title-tag');
+    if (translations[key] !== undefined) {
+      document.title = translations[key];
+    }
+  }
+
   // Typed.js (frase animada do hero)
   const typedEl = document.querySelector('.typed');
   if (typedEl && translations.hero_typed_items) {
