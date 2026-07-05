@@ -102,6 +102,7 @@
   "dino_feat4_desc": "Creation of visual assets (sprites) drawn pixel by pixel, adapting classic references to work around the simulator's severe graphical and rendering limitations.",
 
   "arrow_context": "First Unity game, remade",
+  "arrow_page_title": "Arrow Escape",
   "arrow_desc1": "<strong>Arrow Escape</strong> was my very first hands-on contact with Unity. I originally built the base of this project for the Fellowship of the Game (FoG) selection process. I recently decided to revisit it to apply the technical growth I've gained since then, turning the initial prototype into a finished, well-structured game.",
   "arrow_desc2": "In this precision 2D platformer, the player controls a charismatic marshmallow who must calculate jumps and dodge traps to complete the levels. The focus of this second version was refactoring the codebase, finishing the level design, and applying a new visual identity to the project.",
   "arrow_feat1_title": "State Machine Architecture",

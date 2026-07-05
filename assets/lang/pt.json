@@ -102,6 +102,7 @@
   "dino_feat4_desc": "Criação dos recursos visuais (sprites) desenhados pixel a pixel, adaptando referências clássicas para contornar as severas limitações gráficas e de renderização do simulador.",
 
   "arrow_context": "Primeiro jogo Unity refeito",
+  "arrow_page_title": "Arrow Escape",
   "arrow_desc1": "<strong>Arrow Escape</strong> foi meu primeiríssimo contato prático com a Unity. Originalmente, desenvolvi a base desse projeto para o processo seletivo do Fellowship of the Game (FoG). Decidi revisitá-lo recentemente para aplicar o amadurecimento técnico que adquiri desde então, transformando o protótipo inicial em um jogo finalizado e estruturado.",
   "arrow_desc2": "Neste Platformer 2D de precisão, o jogador controla um carismático marshmallow que precisa calcular saltos e desviar de armadilhas para concluir as fases. O foco dessa segunda versão foi refatorar a base do código, finalizar o level design e aplicar uma nova identidade visual ao projeto.",
   "arrow_feat1_title": "Arquitetura State Machine",
