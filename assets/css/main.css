@@ -2588,3 +2588,27 @@
   background-color: #e04545;
   transform: translateY(-3px);
 }
+/*--------------------------------------------------------------
+# Email Copy Toast
+--------------------------------------------------------------*/
+#email-copy-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translate(-50%, 20px);
+  background-color: var(--accent-color, #2a2c39);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#email-copy-toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
