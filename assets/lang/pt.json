@@ -177,5 +177,28 @@
   "itchio_logo_alt": "Itch.io",
 
   "sim_feat4_title": "Arquitetura Spring Boot",
-  "sim_feat4_desc": "Construção de um servidor robusto em Java que atua como o cérebro do sistema, orquestrando perfeitamente a comunicação entre as requisições web do usuário e a execução em baixo nível."
+  "sim_feat4_desc": "Construção de um servidor robusto em Java que atua como o cérebro do sistema, orquestrando perfeitamente a comunicação entre as requisições web do usuário e a execução em baixo nível.",
+
+  "umbra_page_title": "Umbra Dive - Detalhes",
+  "umbra_page_description": "Jogo top down focado em boss fights, desenvolvido em Unity",
+  "umbra_gameplay_alt": "Gameplay do Umbra Dive",
+  "label_genre": "Gênero",
+  "umbra_genre": "Top Down / Boss Fights",
+  "umbra_context": "Projeto Solo",
+
+  "umbra_desc1": "<strong>Umbra Dive</strong> é um jogo top down com foco em boss fights, desenvolvido em Unity. O projeto foi pensado para ser um desafio técnico completo: além de entregar combates contra chefes com identidade própria, ele exigiu a construção de uma base sólida de sistemas, do comportamento da IA ao salvamento de progresso.",
+  "umbra_desc2": "O coração do jogo são os chefes. Cada boss é guiado por um behavior graph, o que permite montar e ajustar padrões de ataque de forma visual e modular, enquanto o jogador e os inimigos comuns são controlados por state machines. O resultado é uma arquitetura em que cada comportamento é isolado, testável e fácil de expandir.",
+
+  "umbra_feat1_title": "Object Pooling",
+  "umbra_feat1_desc": "Reaproveitamento de projéteis, efeitos e inimigos através de pools, evitando <code>Instantiate</code> e <code>Destroy</code> em excesso e reduzindo picos de alocação e coleta de lixo durante as lutas.",
+  "umbra_feat2_title": "Behavior Graphs para Bosses",
+  "umbra_feat2_desc": "Comportamento dos chefes construído com behavior graphs, permitindo desenhar fases, transições e padrões de ataque de forma visual, modular e fácil de balancear.",
+  "umbra_feat3_title": "State Machines",
+  "umbra_feat3_desc": "Player e inimigos padrão controlados por máquinas de estado, separando movimento, ataque, dano e demais comportamentos em estados claros e com transições bem definidas.",
+  "umbra_feat4_title": "NavMesh",
+  "umbra_feat4_desc": "Uso de NavMesh para pathfinding e perseguição dos inimigos pelo cenário, desviando de obstáculos e se posicionando de forma coerente durante o combate.",
+  "umbra_feat5_title": "Sistema de Save",
+  "umbra_feat5_desc": "Sistema de salvamento que persiste o progresso do jogador entre sessões, com serialização dos dados e carregamento ao retomar o jogo.",
+  "umbra_feat6_title": "Áudio e Músicas",
+  "umbra_feat6_desc": "Implementação de efeitos sonoros e trilhas musicais, reforçando o ritmo e a atmosfera das boss fights e dando feedback ao jogador."
 }

@@ -177,5 +177,28 @@
   "itchio_logo_alt": "Itch.io",
 
   "sim_feat4_title": "Spring Boot Architecture",
-  "sim_feat4_desc": "Built a robust Java server that acts as the system's brain, seamlessly orchestrating communication between the user's web requests and the low-level execution."
+  "sim_feat4_desc": "Built a robust Java server that acts as the system's brain, seamlessly orchestrating communication between the user's web requests and the low-level execution.",
+
+  "umbra_page_title": "Umbra Dive - Details",
+  "umbra_page_description": "Top down boss fight game developed in Unity",
+  "umbra_gameplay_alt": "Umbra Dive gameplay",
+  "label_genre": "Genre",
+  "umbra_genre": "Top Down / Boss Fights",
+  "umbra_context": "Solo Project",
+
+  "umbra_desc1": "<strong>Umbra Dive</strong> is a top down game focused on boss fights, developed in Unity. The project was designed as a complete technical challenge: besides delivering combat against bosses with their own identity, it required building a solid foundation of systems, from AI behavior to progress saving.",
+  "umbra_desc2": "Bosses are the heart of the game. Each boss is driven by a behavior graph, which allows attack patterns to be built and tuned visually and modularly, while the player and regular enemies are controlled by state machines. The result is an architecture where each behavior is isolated, testable and easy to expand.",
+
+  "umbra_feat1_title": "Object Pooling",
+  "umbra_feat1_desc": "Reuse of projectiles, effects and enemies through pools, avoiding excessive <code>Instantiate</code> and <code>Destroy</code> calls and reducing allocation spikes and garbage collection during fights.",
+  "umbra_feat2_title": "Behavior Graphs for Bosses",
+  "umbra_feat2_desc": "Boss behavior built with behavior graphs, allowing phases, transitions and attack patterns to be designed visually, modularly and with easy balancing.",
+  "umbra_feat3_title": "State Machines",
+  "umbra_feat3_desc": "Player and regular enemies controlled by state machines, separating movement, attack, damage and other behaviors into clear states with well-defined transitions.",
+  "umbra_feat4_title": "NavMesh",
+  "umbra_feat4_desc": "NavMesh used for enemy pathfinding and chasing across the level, avoiding obstacles and positioning coherently during combat.",
+  "umbra_feat5_title": "Save System",
+  "umbra_feat5_desc": "Save system that persists player progress between sessions, with data serialization and loading when resuming the game.",
+  "umbra_feat6_title": "Audio and Music",
+  "umbra_feat6_desc": "Implementation of sound effects and music tracks, reinforcing the rhythm and atmosphere of boss fights and giving feedback to the player."
 }
