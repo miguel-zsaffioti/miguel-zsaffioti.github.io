@@ -225,4 +225,13 @@
   "f1_feat7_desc": "Initialization script that creates the schema and imports the CSV/TSV files with <code>\\copy</code> through staging tables, handling empty fields, non-numeric positions and different encodings before populating the final tables.",
   "f1_feat8_title": "FastAPI Backend",
   "f1_feat8_desc": "Python API with FastAPI and psycopg2, using parameterized queries, driver and constructor registration by the admin and driver import via CSV in a single transaction, with rollback on error. Packaged with a Dockerfile."
+
+  ,  "doit_feat1_title": "JWT Authentication",
+  "doit_feat1_desc": "Registration and login with bcrypt and 24-hour JWT tokens. Routes protected with OAuth2 Bearer.",
+  "doit_feat2_title": "Habits and Check-in",
+  "doit_feat2_desc": "Habits with a weekly schedule and toggle check-in. Each user can only access their own data.",
+  "doit_feat3_title": "Streaks and Achievements",
+  "doit_feat3_desc": "Streaks computed from check-ins and achievements unlocked automatically by criteria.",
+  "doit_feat4_title": "Testing and Docker",
+  "doit_feat4_desc": "40 tests with Pytest and SQLite, and a Dockerfile using <code>python:3.11-slim</code> and a non-root user."
 }

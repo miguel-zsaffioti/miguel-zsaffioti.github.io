@@ -225,4 +225,13 @@
   "f1_feat7_desc": "Script de inicialização que cria o schema e importa os arquivos CSV/TSV com <code>\\copy</code> por meio de tabelas de staging, tratando campos vazios, posições não numéricas e encodings diferentes antes de popular as tabelas finais.",
   "f1_feat8_title": "API FastAPI",
   "f1_feat8_desc": "API em Python com FastAPI e psycopg2, usando queries parametrizadas, cadastro de pilotos e escuderias pelo admin e importação de pilotos via CSV em uma única transação, com rollback em caso de erro. Empacotada com Dockerfile."
+  ,  "doit_feat1_title": "Autenticação com JWT",
+  "doit_feat1_desc": "Cadastro e login com bcrypt e tokens JWT de 24 horas. Rotas protegidas por OAuth2 Bearer.",
+  "doit_feat2_title": "Hábitos e Check-in",
+  "doit_feat2_desc": "Hábitos com frequência semanal e check-in com toggle. Cada usuário só acessa os próprios dados.",
+  "doit_feat3_title": "Streaks e Conquistas",
+  "doit_feat3_desc": "Streak calculado a partir dos check-ins e conquistas desbloqueadas automaticamente por critérios.",
+  "doit_feat4_title": "Testes e Docker",
+  "doit_feat4_desc": "40 testes com Pytest e SQLite, e Dockerfile com <code>python:3.11-slim</code> e usuário sem root."
+
 }
