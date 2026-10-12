@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title data-i18n-title-tag="f1_page_title">F1 Lab BD - Detalhes</title>
+  <meta name="description" content="Sistema web de consultas e relatórios sobre dados da Fórmula 1, com functions, views e triggers em PostgreSQL" data-i18n-content="f1_page_description">
+  <meta name="keywords" content="PostgreSQL, SQL, PL/pgSQL, Triggers, Functions, FastAPI, Python, Docker, Backend">
+
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav_home">Inicio</span></a></li>
+          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">Sobre</span></a></li>
+          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Curriculo</span></a></li>
+          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_portfolio">Portfolio</span></a></li>
+          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contato</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links d-flex justify-content-center align-items-center">
+        <a href="https://www.linkedin.com/in/miguel-zsaffioti/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="email" title="Copiar e-mail" data-i18n-title="copy_email_title" onclick="copyEmail(event)"><i class="bi bi-envelope"></i></a>
+
+        <a href="https://miguel-zsaffioti.itch.io/" target="_blank" class="itchio">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 16px; height: 16px; filter: invert(1);">
+        </a>
+
+        <button id="lang-switch-btn" class="lang-switch-btn" type="button" title="Change language / Mudar idioma">EN</button>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0" data-i18n="project_details_title">Detalhes do Projeto</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
+            <li class="current">F1 Lab BD</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-media" data-aos="fade-up" data-aos-delay="150">
+              <!-- TODO: trocar por um print/gif das telas do sistema (dashboard ou relatórios) -->
+              <img src="../assets/img/portfolio/labBD2.png" alt="Telas do F1 Lab BD" data-i18n-alt="f1_img_alt" class="img-fluid w-100 rounded" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3 data-i18n="project_info_title">Informação do Projeto</h3>
+              <ul>
+                <li><strong data-i18n="label_category">Categoria</strong>: Backend / Database</li>
+                <li><strong data-i18n="label_language">Linguagem</strong>: Python / SQL (PostgreSQL)</li>
+                <li><strong data-i18n="label_context">Contexto</strong>: <span data-i18n="f1_context">Disciplina de Laboratório de Banco de Dados</span></li>
+
+                <li class="d-flex align-items-center gap-2 mt-2">
+                  <strong class="me-2" data-i18n="label_links_short">Links</strong>:
+
+                  <!-- TODO: trocar pelo link do repositório do projeto -->
+                  <a href="https://github.com/miguel-zsaffioti/projeto-lab-bd" target="_blank" class="link-badge bg-github" title="Ver no GitHub" data-i18n-title="view_github_title">
+                    <i class="bi bi-github" style="font-size: 20px; line-height: 0;"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2 data-i18n="overview_title_project">Visão Geral do Projeto</h2>
+              <p data-i18n="f1_desc1">
+                O <strong>F1 Lab BD</strong> é um sistema web de consultas e relatórios sobre dados históricos da Fórmula 1, desenvolvido para a disciplina de Laboratório de Banco de Dados. O foco do projeto foi usar o banco como parte ativa da aplicação: em vez de montar consultas na API, a lógica de negócio e os relatórios ficam no PostgreSQL, em functions, views e triggers.
+              </p>
+              <p data-i18n="f1_desc2">
+                O sistema tem três perfis de acesso (Administrador, Escuderia e Piloto), cada um com seu próprio dashboard e seus relatórios. Os logins são criados automaticamente por triggers quando um piloto ou uma escuderia é cadastrado, e a API em FastAPI funciona como uma camada fina que autentica o usuário com JWT e chama as functions do banco.
+              </p>
+
+              <div class="features mt-4">
+                <h3 data-i18n="technical_aspects_title">Principais Aspectos Técnicos</h3>
+                <div class="row gy-3">
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-braces"></i>
+                      <h4 data-i18n="f1_feat1_title">Functions em PL/pgSQL</h4>
+                      <p data-i18n="f1_feat1_desc">Os 7 relatórios e os dashboards foram implementados como functions que retornam <code>TABLE</code>. A API só executa <code>SELECT * FROM fn_...</code>, mantendo a lógica de negócio dentro do banco e as consultas reutilizáveis.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-lightning-charge"></i>
+                      <h4 data-i18n="f1_feat2_title">Triggers de Usuários</h4>
+                      <p data-i18n="f1_feat2_desc">Triggers <code>AFTER INSERT</code> e <code>AFTER UPDATE</code> nas tabelas de pilotos e escuderias criam e sincronizam automaticamente o login de cada um (ex.: <code>hamilton_d</code>, <code>ferrari_c</code>), bloqueando duplicidades com <code>RAISE EXCEPTION</code>.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-eye"></i>
+                      <h4 data-i18n="f1_feat3_title">Views</h4>
+                      <p data-i18n="f1_feat3_desc">Views como <code>vw_resultados_completos</code> (resultado com corrida, circuito, piloto e escuderia) e <code>vw_aeroportos_brasil</code> simplificam os joins e são reaproveitadas pelas functions dos relatórios.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-diagram-3"></i>
+                      <h4 data-i18n="f1_feat4_title">Relatórios Avançados</h4>
+                      <p data-i18n="f1_feat4_desc">Agregações com <code>COUNT(*) FILTER</code>, um relatório hierárquico com drill-down em 3 níveis (totais, circuitos e corridas de cada circuito) e cálculo de distância pela fórmula de Haversine para listar aeroportos a até 100 km de uma cidade.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="800">
+                      <i class="bi bi-speedometer2"></i>
+                      <h4 data-i18n="f1_feat5_title">Índices</h4>
+                      <p data-i18n="f1_feat5_desc">Índices criados a partir dos filtros e joins de cada relatório (status, piloto e posição, país e tipo de aeroporto, circuito), para manter as consultas rápidas sobre a base histórica.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="900">
+                      <i class="bi bi-shield-lock"></i>
+                      <h4 data-i18n="f1_feat6_title">Autenticação e Perfis</h4>
+                      <p data-i18n="f1_feat6_desc">Login com senha criptografada (bcrypt via <code>pgcrypto</code>), tokens JWT e controle de acesso por perfil (Admin, Escuderia e Piloto). Cada login e logout é registrado na tabela <code>users_log</code>.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="1000">
+                      <i class="bi bi-database"></i>
+                      <h4 data-i18n="f1_feat7_title">Carga e Tratamento de Dados</h4>
+                      <p data-i18n="f1_feat7_desc">Script de inicialização que cria o schema e importa os arquivos CSV/TSV com <code>\copy</code> por meio de tabelas de staging, tratando campos vazios, posições não numéricas e encodings diferentes antes de popular as tabelas finais.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="1100">
+                      <i class="bi bi-box-seam"></i>
+                      <h4 data-i18n="f1_feat8_title">API FastAPI</h4>
+                      <p data-i18n="f1_feat8_desc">API em Python com FastAPI e psycopg2, usando queries parametrizadas, cadastro de pilotos e escuderias pelo admin e importação de pilotos via CSV em uma única transação, com rollback em caso de erro. Empacotada com Dockerfile.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/i18n.js" data-i18n-base="../"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
