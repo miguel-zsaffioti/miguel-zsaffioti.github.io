@@ -44,9 +44,8 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav_home">Inicio</span></a></li>
-          <li><a href="#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">Sobre</span></a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Curriculo</span></a></li>
           <li><a href="#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_portfolio">Portfolio</span></a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Curriculo</span></a></li>
           <li><a href="#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contato</span></a></li>
         </ul>
       </nav>
@@ -120,262 +119,6 @@
       </div>
 
     </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
-            <div class="profile-card">
-              <div class="profile-header">
-                <div class="profile-image">
-                  <img src="assets/img/profile/foto2.jpeg" alt="Profile Image" class="img-fluid">
-                </div>
-                <div class="profile-badge">
-                  <i class="bi bi-check-circle-fill"></i>
-                </div>
-              </div>
-
-              <div class="profile-content">
-                <h3>Miguel Saffioti</h3>
-                <p class="profession" data-i18n="profile_role">Game Developer &amp; Backend Developer</p>
-
-                <div class="contact-links">
-                  <a href="#" class="contact-item" onclick="copyEmail(event)">
-                    <i class="bi bi-envelope"></i>
-                    miguel.zsaffioti@gmail.com
-                  </a>
-                  <a href="#" class="contact-item">
-                    <i class="bi bi-geo-alt"></i>
-                    São Carlos, SP
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-content">
-              <div class="section-header">
-                <span class="badge-text" data-i18n="about_badge">Me conheça</span>
-                <h2 data-i18n="about_title">Transformando Linhas de Código em Soluções</h2>
-              </div>
-
-              <div class="description">
-                <p data-i18n="about_desc1">Mais do que apenas escrever código, meu interesse está em criar soluções eficientes. Minha formação em Sistemas de Informação me proporcionou uma base analítica forte, que procuro aplicar em todas as etapas do desenvolvimento, desde o planejamento da arquitetura até a implementação.</p>
-
-                <p data-i18n="about_desc2">Seja desenvolvendo as lógicas de movimentação e sistemas para um jogo isométrico na Unity, ou estruturando as rotas de uma API com Spring Boot, trabalho com o mesmo nível de dedicação. Busco sempre expandir meu leque de ferramentas para me tornar um desenvolvedor cada vez mais versátil.</p>
-              </div>
-
-              <div class="details-grid">
-                <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label" data-i18n="label_education">Educação</span>
-                    <span class="detail-value" data-i18n="value_education">Bacharelado em Sistemas de Informacão, USP</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label" data-i18n="label_languages">Línguas</span>
-                    <span class="detail-value" data-i18n="value_languages">Português, Inglês</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cta-section">
-                <a href="#" class="btn btn-primary" id="download-cv-btn">
-                  <i class="bi bi-download"></i>
-                  <span data-i18n="btn_download_cv">Baixar Currículo</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 data-i18n="skills_title">Skills</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-              <h3 data-i18n="skills_gamedev">Game Development</h3>
-              <div class="skills-animation">
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>C#</h4>
-                    <span class="skill-percentage">75%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip" data-i18n="skill_tip_csharp">Domínio na linguagem para desenvolvimento tanto para Godot quanto para Unity</div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Unity</h4>
-                    <span class="skill-percentage">65%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip" data-i18n="skill_tip_unity">Experiência em desenvolvimento de jogos em 2D e 3D</div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Godot</h4>
-                    <span class="skill-percentage">50%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip" data-i18n="skill_tip_godot">Experiência em desenvolvimento de jogos em 3D</div>
-                </div>
-
-                
-              </div>
-            </div><!-- End Frontend Skills -->
-          </div>
-
-          <div class="col-lg-6">
-            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-              <h3 data-i18n="skills_backend">Backend Development</h3>
-              <div class="skills-animation">
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Java</h4>
-                    <span class="skill-percentage">70%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip" data-i18n="skill_tip_java">APIs REST com Java SpringBoot</div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>SQL</h4>
-                    <span class="skill-percentage">50%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip" data-i18n="skill_tip_sql">Design de banco, otimização e construcão de queries</div>
-                </div>
-
-                <div class="skill-item">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h4>Python</h4>
-                    <span class="skill-percentage">20%</span>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="skill-tooltip" data-i18n="skill_tip_python">Desenvolvimento com FastAPI</div>
-                </div>
-              </div>
-            </div><!-- End Backend Skills -->
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 data-i18n="resume_title">Curriculo</h2>
-      </div>
-
-        <div class="row gy-4">
-          <!-- Left column with summary and contact -->
-          <div class="col-lg-4">
-            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
-              <div class="profile-img mb-4">
-                <img src="assets/img/profile/foto3.jpeg" alt="Profile" class="img-fluid rounded">
-              </div>
-
-              <h3 data-i18n="resume_summary_title">Sumário</h3>
-              <p data-i18n="resume_summary_text">Desenvolvedor em início de carreira, movido pela curiosidade de criar sistemas do zero. Tenho experiência prática desenvolvendo projetos pessoais nas áreas de Game Dev (focado em lógicas e mecânicas em Unity e Godot) e Backend (criando serviços e APIs com Spring Boot e FastAPI). Valorizo muito o aprendizado contínuo, a resolução de problemas lógicos e a busca constante por escrever um código limpo e organizado</p>
-
-              <h3 class="mt-4" data-i18n="resume_contact_title">Informações de Contato</h3>
-              <ul class="contact-info list-unstyled">
-                <li><i class="bi bi-geo-alt"></i> <span data-contact="location"></span></li>
-                <li><i class="bi bi-envelope"></i> <a href="#" onclick="copyEmail(event)" data-contact="email"></a></li>
-                <li><i class="bi bi-linkedin"></i> <a href="#" target="_blank" data-contact="linkedin-url"></a></li>
-              </ul>
-
-            </div>
-          </div>
-
-          <!-- Right column with experience and education -->
-          <div class="col-lg-8 ps-4 ps-lg-5">
-            <!-- Experience Section -->
-            <div class="resume-section" data-aos="fade-up">
-              <h3><i class="bi bi-briefcase me-2"></i><span data-i18n="resume_exp_title">Experiência Profissional</span></h3>
-
-              <div class="resume-item">
-                <h4 data-i18n="job1_title">Desenvolvedor de Jogos</h4>
-                <h5 data-i18n="job1_period">2024 - Presente</h5>
-                <p class="company"><i class="bi bi-building"></i> Fellowship of the Game</p>
-                <ul>
-                  <li data-i18n="job1_bullet1">Desenvolvimento de mecânicas de gameplay e arquitetura de sistemas utilizando Unity e Godot.</li>
-                  <li data-i18n="job1_bullet2">Programação focada em C#, com implementação de lógicas de IA, física e controle de estados.</li>
-                  <li data-i18n="job1_bullet3">Trabalho colaborativo em equipes multidisciplinares para a ideação, prototipagem e entrega de projetos interativos.</li>
-                </ul>
-              </div>
-
-              <div class="resume-item">
-                <h4 data-i18n="job2_title">Estagiário de Consultoria</h4>
-                <h5 data-i18n="job2_period">Fevereiro 2022 - Outubro 2022</h5>
-                <p class="company"><i class="bi bi-building"></i> Sensedia</p>
-                <ul>
-                  <li data-i18n="job2_bullet1">Apoio na estruturação e suporte de integrações e consumo de APIs.</li>
-                  <li data-i18n="job2_bullet2">Auxílio na resolução de problemas técnicos e no entendimento de regras de negócio para soluções escaláveis.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Education Section -->
-            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
-              <h3><i class="bi bi-mortarboard me-2"></i><span data-i18n="resume_edu_title">Educação</span></h3>
-
-              <div class="resume-item">
-                <h4 data-i18n="edu1_title">Bacharelado em Sistemas de Informação</h4>
-                <h5 data-i18n="edu1_period">2024 - Presente</h5>
-                <p class="company"><i class="bi bi-building"></i> Universidade de São Paulo (USP)</p>
-                <p data-i18n="edu1_desc">Foco em engenharia de software e visão de negócio.</p>
-              </div>
-
-              <div class="resume-item">
-                <h4 data-i18n="edu2_title">Técnico de Informática</h4>
-                <h5 data-i18n="edu2_period">2019 - 2021</h5>
-                <p class="company"><i class="bi bi-building"></i> Colégio Técnico de Limeira (COTIL)</p>
-                <p data-i18n="edu2_desc">Primeiros passos no desenvolvimento de software e noções fundamentais de modelagem e consulta a banco de dados.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -579,6 +322,79 @@
       </div>
 
     </section><!-- /Portfolio Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="resume_title">Curriculo</h2>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Coluna esquerda: foto e sumário -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+              <div class="profile-img mb-4">
+                <img src="assets/img/profile/foto3.jpeg" alt="Profile" class="img-fluid rounded">
+              </div>
+
+              <h3 data-i18n="resume_summary_title">Sumário</h3>
+              <p data-i18n="resume_summary_text">Desenvolvedor em início de carreira, movido pela curiosidade de criar sistemas do zero. Tenho experiência prática desenvolvendo projetos pessoais nas áreas de Game Dev (focado em lógicas e mecânicas em Unity e Godot) e Backend (criando serviços e APIs com Spring Boot e FastAPI). Valorizo muito o aprendizado contínuo, a resolução de problemas lógicos e a busca constante por escrever um código limpo e organizado</p>
+            </div>
+          </div>
+
+          <!-- Coluna direita: experiência e educação -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+            <div class="resume-section" data-aos="fade-up">
+              <h3><i class="bi bi-briefcase me-2"></i><span data-i18n="resume_exp_title">Experiência Profissional</span></h3>
+
+              <div class="resume-item">
+                <h4 data-i18n="job1_title">Desenvolvedor de Jogos</h4>
+                <h5 data-i18n="job1_period">2024 - Presente</h5>
+                <p class="company"><i class="bi bi-building"></i> Fellowship of the Game</p>
+                <ul>
+                  <li data-i18n="job1_bullet1">Desenvolvimento de mecânicas de gameplay e arquitetura de sistemas utilizando Unity e Godot.</li>
+                  <li data-i18n="job1_bullet2">Programação focada em C#, com implementação de lógicas de IA, física e controle de estados.</li>
+                  <li data-i18n="job1_bullet3">Trabalho colaborativo em equipes multidisciplinares para a ideação, prototipagem e entrega de projetos interativos.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4 data-i18n="job2_title">Estagiário de Consultoria</h4>
+                <h5 data-i18n="job2_period">Fevereiro 2022 - Outubro 2022</h5>
+                <p class="company"><i class="bi bi-building"></i> Sensedia</p>
+                <ul>
+                  <li data-i18n="job2_bullet1">Apoio na estruturação e suporte de integrações e consumo de APIs.</li>
+                  <li data-i18n="job2_bullet2">Auxílio na resolução de problemas técnicos e no entendimento de regras de negócio para soluções escaláveis.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-mortarboard me-2"></i><span data-i18n="resume_edu_title">Educação</span></h3>
+
+              <div class="resume-item">
+                <h4 data-i18n="edu1_title">Bacharelado em Sistemas de Informação</h4>
+                <h5 data-i18n="edu1_period">2024 - Presente</h5>
+                <p class="company"><i class="bi bi-building"></i> Universidade de São Paulo (USP)</p>
+                <p data-i18n="edu1_desc">Foco em engenharia de software e visão de negócio.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4 data-i18n="edu2_title">Técnico de Informática</h4>
+                <h5 data-i18n="edu2_period">2019 - 2021</h5>
+                <p class="company"><i class="bi bi-building"></i> Colégio Técnico de Limeira (COTIL)</p>
+                <p data-i18n="edu2_desc">Primeiros passos no desenvolvimento de software e noções fundamentais de modelagem e consulta a banco de dados.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Resume Section -->
 
 
     <!-- Contact Section -->
