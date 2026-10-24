@@ -224,8 +224,34 @@
   "f1_feat7_title": "Carga e Tratamento de Dados",
   "f1_feat7_desc": "Script de inicialização que cria o schema e importa os arquivos CSV/TSV com <code>\\copy</code> por meio de tabelas de staging, tratando campos vazios, posições não numéricas e encodings diferentes antes de popular as tabelas finais.",
   "f1_feat8_title": "API FastAPI",
-  "f1_feat8_desc": "API em Python com FastAPI e psycopg2, usando queries parametrizadas, cadastro de pilotos e escuderias pelo admin e importação de pilotos via CSV em uma única transação, com rollback em caso de erro. Empacotada com Dockerfile."
-  ,  "doit_feat1_title": "Autenticação com JWT",
+  "f1_feat8_desc": "API em Python com FastAPI e psycopg2, usando queries parametrizadas, cadastro de pilotos e escuderias pelo admin e importação de pilotos via CSV em uma única transação, com rollback em caso de erro. Empacotada com Dockerfile.",
+
+  "label_role": "Participação",
+  "jb_page_title": "Jeitinho Brasileiro - Detalhes",
+  "jb_page_description": "Jogo de minigames inspirados na cultura brasileira, feito em equipe com Unity. Minha parte: os minigames Chinelo, Arrumar Arraiá, Surf na Pororoca e Berrante",
+  "jb_img_alt": "Gameplay do Jeitinho Brasileiro",
+  "jb_context": "Projeto em equipe (Semcomp)",
+  "jb_role": "4 minigames e arte do Arrumar Arraiá",
+  "jb_desc1": "<strong>Jeitinho Brasileiro",
+  "jb_desc2": "<strong>Esta página mostra a minha parte do projeto.",
+  "jb_contrib_title": "Minhas Contribuições",
+  "jb_feat1_title": "Chinelo",
+  "jb_feat1_desc": "Minigame em interface (UI) em que o jogador precisa desvirar todos os chinelos antes do tempo acabar. Eles são sorteados e embaralhados em uma grade 3x3 posicionada por código, com pequenas variações de posição. Clicar em um chinelo que já estava certo faz a tela tremer e atordoa o jogador por 2 segundos, e a vitória pode vir antes do fim do tempo se tudo for corrigido a tempo.",
+  "jb_feat2_title": "Arrumar Arraiá",
+  "jb_feat2_desc": "Puzzle de grade no estilo Sokoban em que o jogador empurra um balão, por clique ou arrasto, até o seu lugar. As fases são montadas a partir de <code>Tilemaps</code> (chão, obstáculos, alvos e ponto de partida) e sorteadas a cada partida, com ajuste automático de escala e posição para qualquer tela. Bater em um obstáculo ou deixar o tempo acabar estoura o balão. Também fiz toda a arte do minigame.",
+  "jb_feat3_title": "Surf na Pororoca",
+  "jb_feat3_desc": "Minigame de sobrevivência com controle próprio: o surfista segue o dedo ou o mouse na vertical, e o avanço vem de balançar para cima e para baixo, o que gera impulsos que perdem força com o tempo. A pororoca empurra o jogador para trás e galhos surgem pelo caminho; quem é atingido ou fica para trás cai em câmera lenta. Os galhos aparecem mais rápido a cada fase, e o fundo em parallax se ajusta ao tamanho da tela.",
+  "jb_feat4_title": "Berrante",
+  "jb_feat4_desc": "O jogador sopra no microfone para encher uma barra antes do tempo acabar, e ela esvazia sempre que ele para. Se não houver microfone ou nenhum sopro for detectado, o minigame percebe isso sozinho e libera a barra de espaço como alternativa, lembrando a escolha nas rodadas seguintes. Usei o detector de áudio do projeto, que também funciona na versão Web, e ajustei a sensibilidade com base em testes.",
+  "jb_integration": "Os quatro minigames seguem o padrão criado pela equipe: todos herdam de uma classe base (<code>MinigameBase</code>) que padroniza vitória, derrota e fim de tempo, e ajustam tempo e dificuldade pelo gerenciador global do jogo.",
+
+  "doit_page_title": "do.it - Detalhes",
+  "doit_page_description": "API de acompanhamento de hábitos com autenticação JWT, check-ins, streaks e conquistas, em FastAPI e PostgreSQL",
+  "doit_img_alt": "Telas do do.it",
+  "doit_context": "Disciplina de Gerência de Configuração e Desenvolvimento Web e Mobile",
+  "doit_desc1": "O <strong>do.it</strong> é um aplicativo de acompanhamento de hábitos com gamificação, desenvolvido na disciplina de Gerência de Configuração e Desenvolvimento Web e Mobile. O usuário cadastra hábitos com frequência semanal, faz check-in diário e desbloqueia conquistas conforme mantém a constância.",
+  "doit_desc2": "Esta página foca no backend: uma API REST em FastAPI com SQLAlchemy e PostgreSQL, autenticação por JWT, cálculo de streaks, sistema de conquistas e uma suíte de testes automatizados. A API é empacotada com Docker para rodar de forma idêntica em qualquer ambiente.",
+  "doit_feat1_title": "Autenticação com JWT",
   "doit_feat1_desc": "Cadastro e login com bcrypt e tokens JWT de 24 horas. Rotas protegidas por OAuth2 Bearer.",
   "doit_feat2_title": "Hábitos e Check-in",
   "doit_feat2_desc": "Hábitos com frequência semanal e check-in com toggle. Cada usuário só acessa os próprios dados.",
@@ -233,5 +259,4 @@
   "doit_feat3_desc": "Streak calculado a partir dos check-ins e conquistas desbloqueadas automaticamente por critérios.",
   "doit_feat4_title": "Testes e Docker",
   "doit_feat4_desc": "40 testes com Pytest e SQLite, e Dockerfile com <code>python:3.11-slim</code> e usuário sem root."
-
 }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title data-i18n-title-tag="jb_page_title">Jeitinho Brasileiro - Detalhes</title>
+  <meta name="description" content="Jogo de minigames inspirados na cultura brasileira, feito em equipe com Unity. Minha parte: os minigames Chinelo, Arrumar Arraiá, Surf na Pororoca e Berrante" data-i18n-content="jb_page_description">
+  <meta name="keywords" content="Unity, C#, Game Dev, Minigames, Jogo em equipe, Semcomp">
+
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav_home">Inicio</span></a></li>
+          <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">Sobre</span></a></li>
+          <li><a href="../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Curriculo</span></a></li>
+          <li><a href="../index.html#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_portfolio">Portfolio</span></a></li>
+          <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contato</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links d-flex justify-content-center align-items-center">
+        <a href="https://www.linkedin.com/in/miguel-zsaffioti/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="email" title="Copiar e-mail" data-i18n-title="copy_email_title" onclick="copyEmail(event)"><i class="bi bi-envelope"></i></a>
+
+        <a href="https://miguel-zsaffioti.itch.io/" target="_blank" class="itchio">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 16px; height: 16px; filter: invert(1);">
+        </a>
+
+        <button id="lang-switch-btn" class="lang-switch-btn" type="button" title="Change language / Mudar idioma">EN</button>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0" data-i18n="project_details_title">Detalhes do Projeto</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="../index.html" data-i18n="nav_home">Inicio</a></li>
+            <li class="current">Jeitinho Brasileiro</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-media" data-aos="fade-up" data-aos-delay="150">
+              <!-- TODO: colocar um print/gif do jogo em assets/img/portfolio/JB-img.png (ou ajustar o caminho) -->
+              <img src="../assets/img/portfolio/JB-gif.gif" alt="Gameplay do Jeitinho Brasileiro" data-i18n-alt="jb_img_alt" class="img-fluid w-100 rounded" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3 data-i18n="project_info_title">Informação do Projeto</h3>
+              <ul>
+                <li><strong data-i18n="label_category">Categoria</strong>: Game Development</li>
+                <li><strong data-i18n="label_engine">Engine</strong>: Unity / C#</li>
+                <li><strong data-i18n="label_context">Contexto</strong>: <span data-i18n="jb_context">Projeto em equipe (Semcomp)</span></li>
+                <li><strong data-i18n="label_role">Participação</strong>: <span data-i18n="jb_role">4 minigames e arte do Arrumar Arraiá</span></li>
+
+                <li class="d-flex align-items-center gap-2 mt-2">
+                  <strong class="me-2" data-i18n="label_links_short">Links</strong>:
+
+                  <a href="https://github.com/johncleyton/JogoSemcomp29" target="_blank" class="link-badge bg-github" title="Ver no GitHub" data-i18n-title="view_github_title">
+                    <i class="bi bi-github" style="font-size: 20px; line-height: 0;"></i>
+                  </a>
+                  <a href="https://johncleyton.itch.io/jeitinhobrasileiro" target="_blank"  class="link-badge bg-itchio" title="Jogar no Itch.io" data-i18n-title="play_itchio_title">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@9.0.0/icons/itchdotio.svg" alt="Itch.io logo" style="width: 20px; height: 20px; filter: invert(1);">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2 data-i18n="overview_title_project">Visão Geral do Projeto</h2>
+              <p data-i18n="jb_desc1">
+                <strong>Jeitinho Brasileiro</strong> é um jogo de minigames rápidos inspirados na cultura brasileira, organizados por região do país e jogados em sequência contra o relógio, com dificuldade crescente a cada fase. Foi desenvolvido em equipe, em Unity, para a Semcomp, e conta com 36 minigames e versões para Web e Android.
+              </p>
+              <p data-i18n="jb_desc2">
+                <strong>Esta página mostra a minha parte do projeto.</strong> Fui um dos membros do grupo e contribuí com quatro minigames (Chinelo, Arrumar Arraiá, Surf na Pororoca e Berrante), além de toda a arte do Arrumar Arraiá. A estrutura central do jogo, como o gerenciamento de fases e do timer, o menu e os demais sistemas globais, foi desenvolvida por outros integrantes da equipe.
+              </p>
+
+              <div class="features mt-4">
+                <h3 data-i18n="jb_contrib_title">Minhas Contribuições</h3>
+                <div class="row gy-3">
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-grid-3x3-gap"></i>
+                      <h4 data-i18n="jb_feat1_title">Chinelo</h4>
+                      <p data-i18n="jb_feat1_desc">Minigame em interface (UI) em que o jogador precisa desvirar todos os chinelos antes do tempo acabar. Eles são sorteados e embaralhados em uma grade 3x3 posicionada por código, com pequenas variações de posição. Clicar em um chinelo que já estava certo faz a tela tremer e atordoa o jogador por 2 segundos, e a vitória pode vir antes do fim do tempo se tudo for corrigido a tempo.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-puzzle"></i>
+                      <h4 data-i18n="jb_feat2_title">Arrumar Arraiá</h4>
+                      <p data-i18n="jb_feat2_desc">Puzzle de grade no estilo Sokoban em que o jogador empurra um balão, por clique ou arrasto, até o seu lugar. As fases são montadas a partir de <code>Tilemaps</code> (chão, obstáculos, alvos e ponto de partida) e sorteadas a cada partida, com ajuste automático de escala e posição para qualquer tela. Bater em um obstáculo ou deixar o tempo acabar estoura o balão. Também fiz toda a arte do minigame.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-water"></i>
+                      <h4 data-i18n="jb_feat3_title">Surf na Pororoca</h4>
+                      <p data-i18n="jb_feat3_desc">Minigame de sobrevivência com controle próprio: o surfista segue o dedo ou o mouse na vertical, e o avanço vem de balançar para cima e para baixo, o que gera impulsos que perdem força com o tempo. A pororoca empurra o jogador para trás e galhos surgem pelo caminho; quem é atingido ou fica para trás cai em câmera lenta. Os galhos aparecem mais rápido a cada fase, e o fundo em parallax se ajusta ao tamanho da tela.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-mic"></i>
+                      <h4 data-i18n="jb_feat4_title">Berrante</h4>
+                      <p data-i18n="jb_feat4_desc">O jogador sopra no microfone para encher uma barra antes do tempo acabar, e ela esvazia sempre que ele para. Se não houver microfone ou nenhum sopro for detectado, o minigame percebe isso sozinho e libera a barra de espaço como alternativa, lembrando a escolha nas rodadas seguintes. Usei o detector de áudio do projeto, que também funciona na versão Web, e ajustei a sensibilidade com base em testes.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <p class="mt-4" data-i18n="jb_integration">
+                  Os quatro minigames seguem o padrão criado pela equipe: todos herdam de uma classe base (<code>MinigameBase</code>) que padroniza vitória, derrota e fim de tempo, e ajustam tempo e dificuldade pelo gerenciador global do jogo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/i18n.js" data-i18n-base="../"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
